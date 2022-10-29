@@ -7,7 +7,9 @@
 </head>
   <body>
     <header class="page-header">
-      <a href="#"><img src="index.html" alt="Логотип сайта" /></a>
+      <a href="index.html"
+        ><img src="images/logo.svg" width="140" height="70" alt="Логотип сайта"
+      /></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -48,7 +50,13 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-link">
-            <a href="index.html"><img src="№" alt="иконка домика" /></a>
+            <a href="index.html"
+              ><img
+                src="images/icons/breadcrumbs-home.svg"
+                width="13"
+                height="15"
+                alt="Иконка домика"
+            /></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -56,6 +64,12 @@
         </ul>
         <section class="catalog-products">
           <h2 class="vissualy-hidden">Фильтры каталога гостиниц</h2>
+          <img
+            src="images/filter-back.jpg"
+            width="1200"
+            height="412"
+            alt="Фоновая картинка для фильтров"
+          />
           <form
             class="catalog-filter"
             action="https://echo.htmlacademy.ru/"
@@ -139,19 +153,38 @@
         </section>
       </header>
       <section>
-        <h2 class="catalog-title">Найдено гостиниц:</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <p class="catalog-result">Найдено гостиниц:38</p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала дешевые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="expensive">Сначала популярные</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
         <a href="#" class="button button-light">
+          <img
+            src="images/icons/catalog-grid.svg"
+            width="16"
+            height="14"
+            alt="Показать карточки"
+          />
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
+          <img
+            src="images/icons/catalog-close.svg"
+            width="16"
+            height="14"
+            alt="Показать крупный план"
+          />
           <span class="visually-hidden">Показать крупный план</span>
         </a>
         <a class="button" href="#">
+          <img
+            src="images/icons/catalog-list.svg"
+            width="16"
+            height="14"
+            alt="Показать список"
+          />
           <span class="visually-hidden">Показать список</span>
         </a>
         <ul class="hotel-list">
@@ -159,7 +192,9 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-image"
-                src="#"
+                src="images/hotel/hotel-1.jpg"
+                width="300"
+                height="212"
                 alt="Гостиница Amara Resort & Spa"
               />
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -175,7 +210,9 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-img"
-                src="#"
+                src="images/hotel/hotel-2.jpg"
+                width="300"
+                height="212"
                 alt="Гостиница illas at Poco Diablo"
               />
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -191,7 +228,9 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-img"
-                src="#"
+                src="images/hotel/hotel-3.jpg"
+                width="300"
+                height="212"
                 alt="Гостиница Desert Quail Inn"
               />
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -207,7 +246,9 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-img"
-                src="#"
+                src="images/hotel/hotel-4.jpg"
+                width="300"
+                height="212"
                 alt="Гостиница GreenTree Inn"
               />
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -240,8 +281,7 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
+
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
@@ -264,16 +304,30 @@
           <button class="button-blue" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+    <footer>
       <section>
         <h2 class="vissualy-hidden">Контакты</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button-social" href="https://vk.com/htmlacademy">
+              <img
+                src="images/social/social-vk.svg"
+                width="24"
+                height="14"
+                alt="Вконтакте"
+              />
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button-social" href="https://t.me/htmlacademy">
+              <img
+                src="images/social/social-tg.svg"
+                width="18"
+                height="15"
+                alt="Телеграм"
+              />
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
@@ -282,17 +336,25 @@
               class="button-social"
               href="https://www.youtube.com/user/htmlacademyru"
             >
+              <img
+                src="images/social/social-youtube.svg"
+                width="22"
+                height="17"
+                alt="YouTube"
+              />
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
         <a class="contact-form" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <p class="about-text">
-          Сделано в
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"
-            >.html academy</a
-          >
-        </p>
+
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"
+          ><img
+            src="images/social/HTML_Academy_logo.svg"
+            width="115"
+            height="33"
+            alt="Логотип htmlacademy"
+        /></a>
       </section>
     </footer>
   </body>
