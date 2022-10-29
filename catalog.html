@@ -53,12 +53,111 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+        <section class="catalog-products">
+          <h2 class="vissualy-hidden">Фильтры каталога гостиниц</h2>
+          <form
+            class="catalog-filter"
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+          >
+            <fieldset class="catalog-filter-group">
+              <legend class="catslog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="swimming-pool"
+                      checked
+                    />
+                    Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="parking"
+                      checked
+                    />
+                    Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="WI-FI" />
+                    WI-FI
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catslog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="hotel-type"
+                      value="hotel
+                        "
+                      checked
+                    />Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="hotel-type"
+                      value="motel
+                        "
+                    />Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="hotel-type"
+                      value="apartments
+                        "
+                    />Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button-blue" type="submit">Применить</button>
+            <button class="button" type="reset">Сбросить</button>
+          </form>
+        </section>
       </header>
-      <section></section>
+      <section>
+        <h2 class="catalog-title">Найдено гостиниц:</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала дешевые</option>
+          <option value="cheap">Сначала дорогие</option>
+          <option value="expensive">Сначала популярные</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать что-то</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </section>
     </main>
     <footer>
       <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <h2 class="newsletter-title">Подписка на рассылку</h2>
         <p class="newsletter-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
